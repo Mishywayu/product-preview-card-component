@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #E6E3D3;
+}
+
+.container {
+    display: flex;
+    width: 45%;
+    height: 65vh;
+    margin-top: 90px;
+    margin-left: 380px;
+    background: white;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    background-image: url(./images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    padding: 35px;
+}
+
+.right h3 {
+    font-family: 'Montserrat';
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: gray;
+}
+
+.right h2 {
+    padding-top: 10px;
+    font-family: 'Fraunces';
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.right p {
+    padding-top: 10px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 20px;
+    color: gray;
+}
+
+.amount {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
+
+.amount p:nth-child(1) {
+    font-family: 'Fraunces';
+    font-size: 32px;
+    color: #429E9D;
+}
+
+.amount p:nth-child(2) {
+    padding-left: 25px;
+    text-decoration: line-through;
+}
+
+button {
+    width: 220px;
+    padding: 10px 20px;
+    background: #429E9D;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #008080;
+    color: white;
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        display: inline-block;
+        width: 92%;
+        height: 95vh;
+        margin-top: 15px;
+        margin-left: 12px;
+        border-radius: 10px;
+    }
+
+    .left {
+        width: 100%;
+        height: 40vh;
+        background: transparent;
+        background-image: url(./images/image-product-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .right {
+        background: white;
+        width: 100%;
+        height: 40px;
+        padding: 0px;
+    }
+
+    .right h3 {
+        font-size: 10px;
+        padding-top: 15px;
+        padding-left: 20px;
+    }
+
+    .right h2 {
+        padding-left: 20px;
+        font-size: 22px;
+    }
+
+    .right p {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-family: 'Montserrat';
+        font-size: 14px;
+    }
+
+    .amount {
+        display: flex;
+    }
+
+    .amount p:nth-child(1) {
+        font-size: 25px;
+    }
+
+    button {
+        margin-left: 20px;
+        cursor: pointer;
+        white-space: 2px;
+    }
+
+    button:hover {
+        background: #008080;
+        color: white;
+    }
+}
